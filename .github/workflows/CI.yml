@@ -12,6 +12,15 @@ jobs:
     
       - name: Checkout SCM
         uses: actions/checkout@v4
+        
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13' 
+      
+      - name: Install pytest
+        run: pip install pytest flask-testing
+
 
       - name: Run unit test
         run: pytest
