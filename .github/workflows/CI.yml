@@ -11,7 +11,7 @@ jobs:
     steps:
     
       - name: Checkout SCM
-        uses: actiond/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Check
         run: ls  
